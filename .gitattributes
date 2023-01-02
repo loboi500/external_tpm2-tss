@@ -1,6 +1,5 @@
 # Set the default behavior, in case people don't have core.autocrlf set.
 * text=auto
-
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
 *.c text eol=lf
@@ -10,10 +9,38 @@
 *.in text eol=lf
 *.ac text eol=lf
 install text eol=lf
-
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
 *.vcxproj text eol=crlf
 *.mak text  eol=crlf
-
 # Denote all files that are truly binary and should not be modified.
+Android.bp filter=lfs diff=lfs merge=lfs -text
+dist filter=lfs diff=lfs merge=lfs -text
+include filter=lfs diff=lfs merge=lfs -text
+MAINTAINERS filter=lfs diff=lfs merge=lfs -text
+sphinx filter=lfs diff=lfs merge=lfs -text
+lib filter=lfs diff=lfs merge=lfs -text
+CONTRIBUTING.md filter=lfs diff=lfs merge=lfs -text
+doc filter=lfs diff=lfs merge=lfs -text
+Makefile-test.am filter=lfs diff=lfs merge=lfs -text
+man filter=lfs diff=lfs merge=lfs -text
+OWNERS filter=lfs diff=lfs merge=lfs -text
+Doxyfile.in filter=lfs diff=lfs merge=lfs -text
+git.mk filter=lfs diff=lfs merge=lfs -text
+LICENSE filter=lfs diff=lfs merge=lfs -text
+m4 filter=lfs diff=lfs merge=lfs -text
+RELEASE.md filter=lfs diff=lfs merge=lfs -text
+METADATA filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+test filter=lfs diff=lfs merge=lfs -text
+bootstrap filter=lfs diff=lfs merge=lfs -text
+Dockerfile filter=lfs diff=lfs merge=lfs -text
+Makefile-fuzz.am filter=lfs diff=lfs merge=lfs -text
+tpm2-tss.sln filter=lfs diff=lfs merge=lfs -text
+src filter=lfs diff=lfs merge=lfs -text
+CHANGELOG.md filter=lfs diff=lfs merge=lfs -text
+configure.ac filter=lfs diff=lfs merge=lfs -text
+INSTALL.md filter=lfs diff=lfs merge=lfs -text
+Makefile.am filter=lfs diff=lfs merge=lfs -text
+MODULE_LICENSE_BSD filter=lfs diff=lfs merge=lfs -text
+script filter=lfs diff=lfs merge=lfs -text
